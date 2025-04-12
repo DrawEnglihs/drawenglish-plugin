@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/plugin/openapi.yaml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/yaml"
+        }
+      ]
+    }
+  ]
+}
