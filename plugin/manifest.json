@@ -9,7 +9,7 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://drawenglish-plugin.vercel.app/plugin/openapi.yaml"
+    "url": "https://drawenglish-plugin.vercel.app/plugin/openapi-spec.yaml"
   },
   "logo_url": "https://drawenglish.com/plugin/logo.png",
   "contact_email": "drawenglish@gmail.com",
