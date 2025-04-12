@@ -4,7 +4,7 @@ info:
   description: Plugin for drawing English sentences as diagrams to help users understand sentence structure.
   version: '1.0.1'
 servers:
-  - url: https://drawenglish.com
+  - url: https://drawenglish-plugin.vercel.app  # ✅ 여기가 정확히 현재 배포 URL 이어야 해요
 paths:
   /analyze:
     post:
@@ -36,17 +36,14 @@ paths:
                       diagramUrl:
                         type: string
                         format: uri
-                        description: A URL to the generated sentence diagram image.
                       nodes:
                         type: array
                         items:
                           type: string
-                        description: Nodes representing sentence parts.
                       edges:
                         type: array
                         items:
                           type: string
-                        description: Edges representing relationships between nodes.
   /feedback:
     post:
       operationId: submitFeedback
@@ -60,10 +57,8 @@ paths:
               properties:
                 sentence:
                   type: string
-                  description: The sentence for which feedback is being provided.
                 feedback:
                   type: string
-                  description: User feedback.
               required:
                 - sentence
                 - feedback
