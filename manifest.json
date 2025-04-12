@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "DrawEnglish Diagram Assistant",
+  "name_for_model": "drawenglish_diagram",
+  "description_for_human": "Analyze and visualize English sentence structures using DrawEnglish.",
+  "description_for_model": "Analyze English sentences and return sentence diagrams using the DrawEnglish method.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://drawenglish.com/plugin/openapi.yaml"
+  },
+  "logo_url": "https://drawenglish.com/plugin/logo.png",
+  "contact_email": "support@drawenglish.com",
+  "legal_info_url": "https://drawenglish.com/plugin/legal.html"
+}

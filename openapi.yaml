@@ -1,0 +1,80 @@
+openapi: 3.1.0
+info:
+  title: Draw English Plugin
+  description: Plugin for drawing English sentences as diagrams to help users understand sentence structure.
+  version: '1.0.1'
+servers:
+  - url: https://drawenglish.com
+paths:
+  /analyze:
+    post:
+      operationId: analyzeSentence
+      summary: Analyze a sentence and return the drawing data.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                sentence:
+                  type: string
+                  description: The English sentence to analyze.
+              required:
+                - sentence
+      responses:
+        '200':
+          description: Analysis result with drawing information.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: object
+                    properties:
+                      diagramUrl:
+                        type: string
+                        format: uri
+                        description: A URL to the generated sentence diagram image.
+                      nodes:
+                        type: array
+                        items:
+                          type: string
+                        description: Nodes representing sentence parts.
+                      edges:
+                        type: array
+                        items:
+                          type: string
+                        description: Edges representing relationships between nodes.
+  /feedback:
+    post:
+      operationId: submitFeedback
+      summary: Submit user feedback about the sentence diagram.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                sentence:
+                  type: string
+                  description: The sentence for which feedback is being provided.
+                feedback:
+                  type: string
+                  description: User feedback.
+              required:
+                - sentence
+                - feedback
+      responses:
+        '200':
+          description: Feedback submitted successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
