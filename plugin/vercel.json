@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/plugin/openapi.yaml",
+      "source": "/plugin/(.*)\\.yaml",
       "headers": [
         {
           "key": "Content-Type",
