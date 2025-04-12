@@ -9,9 +9,9 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://drawenglish.com/plugin/openapi.yaml"
+    "url": "https://drawenglish-plugin.vercel.app/plugin/openapi.yaml"
   },
   "logo_url": "https://drawenglish.com/plugin/logo.png",
-  "contact_email": "support@drawenglish.com",
-  "legal_info_url": "https://drawenglish.com/plugin/legal.html"
+  "contact_email": "drawenglish@gmail.com",
+  "legal_info_url": "https://drawenglish-plugin.vercel.app/plugin/legal.html"
 }
