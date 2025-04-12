@@ -4,7 +4,7 @@ info:
   description: Plugin for drawing English sentences as diagrams to help users understand sentence structure.
   version: '1.0.1'
 servers:
-  - url: https://drawenglish-plugin.vercel.app
+  - url: "https://drawenglish-plugin.vercel.app"
 paths:
   /analyze:
     post:
